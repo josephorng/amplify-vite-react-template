@@ -3,18 +3,18 @@ import "@aws-amplify/ui-react/styles.css";
 import React, { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import { uploadData } from "aws-amplify/storage";
+// import { uploadData } from "aws-amplify/storage";
 
 const client = generateClient<Schema>();
 
 function App() {
-  const [file, setFile] = React.useState<File | null>(null);
+  // const [file, setFile] = React.useState<File | null>(null);
 
-  const handleChange = (event: any) => {
-    if (event.target.files && event.target.files[0]) {
-      setFile(event.target.files[0]);
-    }
-  };
+  // const handleChange = (event: any) => {
+  //   if (event.target.files && event.target.files[0]) {
+  //     setFile(event.target.files[0]);
+  //   }
+  // };
 
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
