@@ -36,7 +36,7 @@ function App() {
     <Authenticator>
       {({ signOut }) => (
         <main>
-          {/* <h1>My todos</h1>
+          <h1>My todos</h1>
           <button onClick={createTodo}>+ new</button>
           <ul>
             {todos.map((todo) => (
@@ -51,8 +51,8 @@ function App() {
             <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
               Review next step of this tutorial.
             </a>
-          </div> */}
-          <div>
+          </div>
+          {/* <div>
             <input type="file" onChange={handleChange} />
             <button
               onClick={() => {
@@ -68,7 +68,7 @@ function App() {
             >
               Upload
             </button>
-          </div>
+          </div> */}
           <button onClick={signOut}>Sign out</button>
         </main>
       )}
