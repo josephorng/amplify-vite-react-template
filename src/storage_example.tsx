@@ -1,7 +1,7 @@
 import { StorageManager } from "@aws-amplify/ui-react-storage";
 import "@aws-amplify/ui-react/styles.css";
 
-function StorageManagerUI() {
+export const DefaultStorageManagerExample = () => {
   return (
     <StorageManager
       acceptedFileTypes={["image/*"]}
@@ -10,6 +10,4 @@ function StorageManagerUI() {
       isResumable
     />
   );
-}
-
-export default StorageManagerUI;
+};
