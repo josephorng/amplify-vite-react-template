@@ -15,7 +15,7 @@ function App() {
   const handleUploadClick = () => {
     if (file) {
       uploadData({
-        path: `photos/${file.name}`,
+        path: `picture-submissions/${file.name}`,
         data: file,
       });
     } else {
